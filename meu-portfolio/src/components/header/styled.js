@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+var a = document.getElementById('www.instagram.com')
 
 export const MainDivHeader = styled.div `
     min-width: 100%;
@@ -49,4 +50,13 @@ export const ContactsDiv = styled.div `
 export const LittleInfo = styled.p `
     margin: 3px;
     font-weight: 700;
+`
+export const IconLinks = styled.a `
+    color: inherit;
+    font-size: 2rem;
+    :hover{
+        color: gray;
+        text-decoration: none;
+        cursor: pointer;
+    }
 `
