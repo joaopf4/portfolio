@@ -7,6 +7,7 @@ export const MainDivHeader = styled.div `
     min-height: 190px;
     height: fit-content;
     background-color: #F37221;
+    color: #101010;
 `
 /// Laranja claro:
 export const UpDivHeader = styled.div `
@@ -15,7 +16,7 @@ export const UpDivHeader = styled.div `
     height: fit-content;
     background-color: #feab74;
     padding: 15px 25px;
-    box-sizing:border-box;
+    box-sizing: border-box;
    
 `   
 export const CvName = styled.h1 `
@@ -41,22 +42,36 @@ export const QrCodeLIn = styled.img `
 export const DownDivHeader = styled.div `
     width: 100%;
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 `
-export const ContactsDiv = styled.div `
+export const AddressDiv = styled.div `
     padding: 25px; 
     grid-column: 1;
+`
+export const ContactsDiv = styled.div `
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    padding: 25px; 
+    grid-column: 2;
 `
 export const LittleInfo = styled.p `
     margin: 3px;
     font-weight: 700;
 `
+
 export const IconLinks = styled.a `
     color: inherit;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 5px;
     :hover{
         color: gray;
         text-decoration: none;
         cursor: pointer;
     }
+`
+export const DivOne = styled.div `
+    grid-column: 1;
+`
+export const DivTwo = styled.div `
+    grid-column: 2;
 `
