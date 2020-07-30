@@ -1,14 +1,51 @@
 import styled from 'styled-components'
-var a = document.getElementById('www.instagram.com')
+import {theme} from "../../Theme/index"
 
 export const MainDivHeader = styled.div `
-    min-width: 100%;
-    width: fit-content;
-    min-height: 190px;
-    height: fit-content;
-    background-color: #F37221;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: sticky;
+   box-shadow: 0px 1px 10px #aaaaaa;
+    align-items: center;
+    justify-content: space-between; 
+    /* tornar responsível */
 `
-/// Laranja claro:
+export const NavUl = styled.ul `    
+    list-style-type: none;
+    margin: 0;
+    padding: 0 40px 0 0;
+    height: inherit;
+    overflow: hidden;
+    background-color: transparent;
+    li {
+        float: right;
+        height: 100%;
+    }
+    li a {
+        display: block;
+        color: ${theme.darkBlue};
+        text-align: center;
+        padding: 15px 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        :hover {
+            background-color: ${theme.mediumpacityBlue};
+        }
+        :active {
+            background-color: ${theme.lowpacityBlue};
+        }
+    }
+
+`
+
+export const SpacingDiv = styled.div `
+width: 70vw;
+`
+
 export const UpDivHeader = styled.div `
     min-width: 100%;
     width: fit-content;
@@ -18,12 +55,9 @@ export const UpDivHeader = styled.div `
     box-sizing: border-box;
    
 `   
-export const CvName = styled.h1 `
-    margin: auto 15px auto auto;
-    @font-face {
-    font-family: 'nexa_bold.otf';
-    src: url("../header/fonts/nexa_bold.otf");
-    }
+export const CvName = styled.p `
+    margin-left: 50px;
+    
 `
 export const NameAndUnderWrapper = styled.div ``
 export const NameAndQrWrapper = styled.div`
