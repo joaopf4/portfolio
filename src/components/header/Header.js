@@ -1,36 +1,37 @@
 import React from 'react';
-import {MainDivHeader, UpDivHeader, CvName, CvUnderName, QrCodeLIn, 
+import {MainDivHeader, SpacingDiv, CvName, CvUnderName, QrCodeLIn, 
     NameAndUnderWrapper, NameAndQrWrapper, DownDivHeader, ContactsDiv, 
-    LittleInfo, IconLinks, AddressDiv} from './styled'
+    LittleInfo, NavUl, IconLinks, AddressDiv} from './styled'
 import QrCode from '../../img/qrcode_linkedin.png'
 
 class Header extends React.Component {
     render() {
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            // if (x.style.display === "block") {
+            //   x.style.display = "none";
+            // } else {
+            //   x.style.display = "block";
+            // }
+          }
       return (
         <MainDivHeader>
-            <UpDivHeader>
-                <NameAndQrWrapper>
-                    <NameAndUnderWrapper>
-                        <CvName>João Pedro Fonseca Achkar</CvName>
-                        <CvUnderName>Brasileiro, 29 anos</CvUnderName>
-                    </NameAndUnderWrapper>
-                    <QrCodeLIn alt="LinkedIn" src={QrCode}/>
-                </NameAndQrWrapper>
-            </UpDivHeader>
-            <DownDivHeader>
-                <AddressDiv>
-                    <LittleInfo>Rua da Bahia 1759</LittleInfo>
-                    <LittleInfo>Lourdes, Belo Horizonte MG</LittleInfo>
-                    <LittleInfo>(31) 3213-3147 / 9 8816-5740</LittleInfo>
-                </AddressDiv>
-                <ContactsDiv>
-                <div><IconLinks href='http://www.instagram.com/joaopfa' target="blank"><i class="fab fa-instagram"></i> </IconLinks></div>
-                <div><IconLinks href='http://www.linkedin.com/in/joaopfa' target="blank"><i class="fab fa-linkedin"></i></IconLinks></div>
-                <div><IconLinks href='https://github.com/joaopf4' target="blank"><i class="fab fa-github"></i></IconLinks></div>
-                <div><IconLinks href='http://www.instagram.com/joaopfa' target="blank"><i class="fas fa-envelope"></i></IconLinks></div>
-                </ContactsDiv>
+        <CvName>
+        João Pedro
+        </CvName>
 
-            </DownDivHeader>
+        <NavUl id="myLinks"> 
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onClick={myFunction()}>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </NavUl>    
+
         </MainDivHeader>
       );
     }
