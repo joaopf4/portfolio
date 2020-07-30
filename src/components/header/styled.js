@@ -7,7 +7,6 @@ export const MainDivHeader = styled.div `
     min-height: 190px;
     height: fit-content;
     background-color: #F37221;
-    color: #101010;
 `
 /// Laranja claro:
 export const UpDivHeader = styled.div `

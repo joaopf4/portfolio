@@ -16,6 +16,7 @@ export const CardContents = styled.div `
     background: #cfcfcf;
     border-radius: 10px;
     box-sizing: border-box;
+    text-align: justify;
 `
 export const Abilities = styled.span `
     border-radius: 12px;
@@ -30,4 +31,9 @@ export const AbilitiesGroup = styled.div `
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
+`
+
+export const Lista = styled.ul `
+`
+export const ItenLista = styled.li `
 `
