@@ -4,6 +4,7 @@ import {MainGrid,
 import SobreMim from '../cvSections/SobreMim/SobreMim';
 import Educação from '../cvSections/Educação/Educação';
 import Habilidades from '../cvSections/Habilidades/Habilidades';
+import Experiencias from '../cvSections/Experiências profissionais/Experiencias';
 
     class Main extends React.Component {
         render() {
@@ -13,6 +14,7 @@ import Habilidades from '../cvSections/Habilidades/Habilidades';
                         <SobreMim/>
                         <Educação/>
                         <Habilidades/>
+                        <Experiencias/>
                     </MainGrid>
                 </MainBody>
                 );
