@@ -1,19 +1,22 @@
 import React from 'react';
-import {MainDivHeader, SpacingDiv, CvName, CvUnderName, QrCodeLIn, 
+import {MainDivHeader, HambIcon, CvName, CvUnderName, QrCodeLIn, 
     NameAndUnderWrapper, NameAndQrWrapper, DownDivHeader, ContactsDiv, 
     LittleInfo, NavUl, IconLinks, AddressDiv} from './styled'
 import QrCode from '../../img/qrcode_linkedin.png'
 
+
 class Header extends React.Component {
     render() {
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            // if (x.style.display === "block") {
-            //   x.style.display = "none";
-            // } else {
-            //   x.style.display = "block";
-            // }
-          }
+        /*
+         const renderMenuMobile = () => {
+             const Hamb = NavUl;
+             if(Hamb.style.display === "none") {
+                 Hamb.style.display = "inline-grid"
+             } else {
+                 Hamb.style.display === "none"
+             } 
+         }
+*/
       return (
         <MainDivHeader>
         <CvName>
@@ -25,12 +28,12 @@ class Header extends React.Component {
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
-            <li>
-                <a href="javascript:void(0);" class="icon" onClick={myFunction()}>
-                    <i class="fa fa-bars"></i>
-                </a>
-            </li>
         </NavUl>    
+        <HambIcon>
+            <a className="hamb" href=""  /*onClick={this.renderMenuMobile()}*/ > 
+                <i class="fa fa-bars"></i>
+            </a>
+        </HambIcon>
 
         </MainDivHeader>
       );
