@@ -5,39 +5,30 @@ import {MainDivHeader, HambIcon, CvName, CvUnderName, QrCodeLIn,
 import QrCode from '../../img/qrcode_linkedin.png'
 
 
-class Header extends React.Component {
-    render() {
-        /*
-         const renderMenuMobile = () => {
-             const Hamb = NavUl;
-             if(Hamb.style.display === "none") {
-                 Hamb.style.display = "inline-grid"
-             } else {
-                 Hamb.style.display === "none"
-             } 
-         }
-*/
+function Header() {
+
+        const [HambDisplay, setHambDisplay] = React.useState(true)
+
       return (
         <MainDivHeader>
-        <CvName>
-        João Pedro
-        </CvName>
+            <CvName>
+                João Pedro
+            </CvName>
 
-        <NavUl id="myLinks"> 
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </NavUl>    
-        <HambIcon>
-            <a className="hamb" href=""  /*onClick={this.renderMenuMobile()}*/ > 
-                <i class="fa fa-bars"></i>
-            </a>
-        </HambIcon>
-
+            <NavUl display={HambDisplay ? "none": "inline-grid" }> 
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </NavUl>    
+            <HambIcon onClick={()=> setHambDisplay(!HambDisplay)}>
+                <a > 
+                    <i class="fa fa-bars"></i>
+                </a>
+            </HambIcon>
         </MainDivHeader>
       );
     }
-  }
+  
   
   export default Header;

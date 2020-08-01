@@ -9,7 +9,8 @@ export const MainDivHeader = styled.div `
     box-shadow: 0px 1px 10px #aaaaaa;
     align-items: center;
     justify-content: space-between; 
-    /* tornar responsível */
+    background-color: white;
+    opacity: 0.7;
 `
 export const NavUl = styled.ul `    
     list-style-type: none;
@@ -23,6 +24,7 @@ export const NavUl = styled.ul `
     li a {
         display: block;
         color: ${theme.darkBlue};
+        font-weight: bold;
         text-align: center;
         padding: 15px 16px;
         text-decoration: none;
@@ -36,8 +38,8 @@ export const NavUl = styled.ul `
             background-color: ${theme.lowpacityBlue};
         }
     }
-    @media(max-width: 540px){
-        display: inline-grid;
+    @media(max-width: 600px){
+        display: ${props => props.display};
         list-style-type: none;
         padding: 50px 0px 0 0;
         position: absolute;
@@ -55,7 +57,7 @@ export const NavUl = styled.ul `
 `
 export const HambIcon = styled.span `
      display: none;
-    @media(max-width: 540px){
+    @media(max-width: 600px){
         display: block;
         margin-right: 20px;
         z-index: 1;
@@ -73,8 +75,9 @@ export const HambIcon = styled.span `
     a{
         color: ${theme.darkBlue};
         text-align: center;
-        padding: 15px 16px;
+        padding: 15px 14px;
         text-decoration: none;
+        font-size: 26px;
         display: flex;
         align-items: center;
         height: 100%;
@@ -99,7 +102,9 @@ export const UpDivHeader = styled.div `
 `   
 export const CvName = styled.p `
     font-size: 25px;
-    margin: 0 0 0 30px;    
+    margin: 0 0 0 30px;  
+    font-weight: bold;
+    color: ${theme.darkBlue};  
 `
 export const NameAndUnderWrapper = styled.div ``
 export const NameAndQrWrapper = styled.div`
