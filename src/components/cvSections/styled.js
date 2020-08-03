@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {theme} from "../../Theme/index";
 
 export const CardHeader = styled.div `
     width: 100%;
@@ -9,15 +10,14 @@ export const CardHeader = styled.div `
 `
 
 export const CardContents = styled.div `
-    width: inherit;
-    min-width: fit-content;
-    height: auto;
-    padding: 18px;
-    background: #cfcfcf;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: justify;
+    width: inherit; 
+
+    background-color: ${theme.mediumpacityBlue};
+    height: fit-content;
+    display: flex; 
+    flex-direction: column;
 `
+
 export const Abilities = styled.span `
     border-radius: 12px;
     background-color: #F37221;

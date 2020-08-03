@@ -5,33 +5,33 @@ export const MainDivHeader = styled.div `
     width: 100%;
     height: 50px;
     display: flex;
-    position: sticky;
-   box-shadow: 0px 1px 10px #aaaaaa;
+    position: fixed;
+    box-shadow: 0px 1px 10px #aaaaaa;
     align-items: center;
     justify-content: space-between; 
-    /* tornar responsível */
+    background-color: white;
+    opacity: 0.75;
 `
 export const NavUl = styled.ul `    
     list-style-type: none;
-    margin: 0;
     padding: 0 40px 0 0;
     height: inherit;
-    overflow: hidden;
     background-color: transparent;
+    opacity: 1;
     li {
-        float: right;
+        float: left;
         height: 100%;
     }
     li a {
         display: block;
         color: ${theme.darkBlue};
+        font-weight: bold;
         text-align: center;
         padding: 15px 16px;
         text-decoration: none;
         display: flex;
         align-items: center;
         height: 100%;
-        
         :hover {
             background-color: ${theme.mediumpacityBlue};
         }
@@ -39,7 +39,54 @@ export const NavUl = styled.ul `
             background-color: ${theme.lowpacityBlue};
         }
     }
-
+    @media(max-width: 900px){
+        display: ${props => props.display};
+        list-style-type: none;
+        padding: 50px 0px 0 0;
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        z-index:1;
+        li {
+            background-color: black;
+            border-bottom: 1px solid ${theme.jeans};
+        }
+        li a {
+            color: white;
+            align-self: right;
+        }
+  } 
+`
+export const HambIcon = styled.span `
+     display: none;
+    @media(max-width: 900px){
+        display: block;
+        margin-right: 20px;
+        z-index: 1;
+        width: 50px;
+        height: 100%;
+        :hover {
+            background-color: ${theme.mediumpacityBlue};
+            color: white;
+        }
+        :active {
+            background-color: ${theme.lowpacityBlue};
+            color: white;
+        }
+    } 
+    a{
+        color: ${theme.darkBlue};
+        text-align: center;
+        padding: 15px 14px;
+        text-decoration: none;
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        :hover{
+            cursor: pointer;
+        }
+        }
 `
 
 export const SpacingDiv = styled.div `
@@ -56,8 +103,10 @@ export const UpDivHeader = styled.div `
    
 `   
 export const CvName = styled.p `
-    margin-left: 50px;
-    
+    font-size: 25px;
+    margin: 0 0 0 30px;  
+    font-weight: bold;
+    color: ${theme.darkBlue};  
 `
 export const NameAndUnderWrapper = styled.div ``
 export const NameAndQrWrapper = styled.div`
