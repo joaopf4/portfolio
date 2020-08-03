@@ -9,11 +9,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
   }
-  @font-face {
-    font-family: 'nexa_bold.otf';
-    src: url("../header/fonts/nexa_bold.otf");
-    }
+
 `;
 export const theme = {
     white: "#fffffb",

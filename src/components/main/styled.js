@@ -20,57 +20,81 @@ export const FirstSection = styled.div `
   width: 100%; 
   background-image: url(${ImgBg}) ;
   background-size: 50%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position-x: right;
-  height: fit-content;
-  min-height: 500px;
+  height: 100vh;
   display: flex; 
-  @media(max-width: 1010px){
-    background-size: cover;
+  background-size: cover;
     background-position-x: center;
     background-position-y: center;
-  }
   `
 export const FSLeft = styled.div `
   background-color: ${theme.mediumpacityBlue};
   width: 50%;
   height: auto;
+  display: flex;
+  align-items: center;
   @media(max-width: 620px){
     width: 100%;
+    flex-direction: column;
   }
   `
 export const FSLTxt = styled.div `
     display: flex;
-    margin: 55px 0px 10% 10%;
+    /* margin: 20px 0px 10% 20px; */
     flex-direction: column;
+    margin-left: 7vw;
     color: white;
     h1{
         font-size: 2rem;
         max-width: 200px;
         margin: 6px 0px;
-        @media(min-width: 1010px) {
+        /* @media(min-width: 1010px) {
             width: unset;
-        }
+        } */
     }
     h2{
         margin: 6px 0px;
         font-size: 1.4rem;
         font-weight: 400;
+        @media(max-width: 400px) {
+            width: 80%;
+        }
     }
     p {
        width: 85%;
        font-size: 0.8rem;
        text-align: justify;
     }
-    @media(min-width: 1010px) {
-        margin: 70px 0 20px 18%;
-    }
+    @media(max-width: 620px){
+      margin: auto 0 auto 7vw;
+  }
   `
 export const FSRight = styled.div `
   background-color: ${theme.lowpacityBlue};
   width: 50%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   @media(max-width: 620px){
     display: none;
+  }
+  `
+  export const IconsWrapperR = styled.div `
+    display: flex; 
+    flex-direction: column;
+    margin-right: 30px;
+    @media(max-width: 620px){
+    display: none;
+  }
+  `
+  export const IconsWrapperL = styled.div `
+    display: none; 
+    @media(max-width: 620px){
+    display: flex;
+
+    overflow:visible;
+    width: 100%;
+    justify-content: space-evenly;
   }
   `

@@ -5,7 +5,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100%; 
   height: fit-content;
+  padding-left: 0px !important;
+  overflow-y: overlay;
 } 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

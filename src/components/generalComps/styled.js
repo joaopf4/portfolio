@@ -2,13 +2,16 @@ import styled from 'styled-components'
 import {theme} from "../../Theme/index"
 
 export const IconLinks = styled.a `
-    color: inherit;
+    color: white;
     font-size: 1.5rem;
     margin: 5px;
     :hover{
-        color: gray;
+        color: ${theme.darkBlue};
         text-decoration: none;
         cursor: pointer;
+    }
+    :active{
+        color: ${theme.mediumpacityBlue};
     }
 `
 export const Buttons = styled.button `
@@ -20,6 +23,7 @@ export const Buttons = styled.button `
     border: none;
     width: fit-content;
     outline: none;
+    margin: 15px 0px;
     :hover {
         cursor: pointer;
         background-color: ${theme.lightBlue};

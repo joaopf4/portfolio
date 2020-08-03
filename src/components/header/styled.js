@@ -10,13 +10,14 @@ export const MainDivHeader = styled.div `
     align-items: center;
     justify-content: space-between; 
     background-color: white;
-    opacity: 0.7;
+    opacity: 0.75;
 `
 export const NavUl = styled.ul `    
     list-style-type: none;
     padding: 0 40px 0 0;
     height: inherit;
     background-color: transparent;
+    opacity: 1;
     li {
         float: left;
         height: 100%;
@@ -38,26 +39,27 @@ export const NavUl = styled.ul `
             background-color: ${theme.lowpacityBlue};
         }
     }
-    @media(max-width: 600px){
+    @media(max-width: 900px){
         display: ${props => props.display};
         list-style-type: none;
         padding: 50px 0px 0 0;
         position: absolute;
         right: 0px;
-        width: 240px;
+        width: 300px;
+        z-index:1;
         li {
-            background-color: ${theme.darkBlue};
-            color: white;
-            border-bottom: 1px solid ${theme.jeans}
+            background-color: black;
+            border-bottom: 1px solid ${theme.jeans};
         }
         li a {
             color: white;
+            align-self: right;
         }
   } 
 `
 export const HambIcon = styled.span `
      display: none;
-    @media(max-width: 600px){
+    @media(max-width: 900px){
         display: block;
         margin-right: 20px;
         z-index: 1;
