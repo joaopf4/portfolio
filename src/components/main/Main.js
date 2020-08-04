@@ -12,7 +12,7 @@ import Experiencias from '../cvSections/Experiências profissionais/Experiencias
         render() {
             return (
                 <MainBody>
-                    <FirstSection>
+                    <FirstSection id="eujoao">
                         <FSLeft>
                             <FSLTxt>
                                 <h1>Eu sou o João Pedro!</h1>
@@ -26,7 +26,7 @@ import Experiencias from '../cvSections/Experiências profissionais/Experiencias
                             </p> */}
                                 <p> ReactJS | HTML | CSS | JavaScript | TypeScript | MySQL | AWS | Firebase</p>
 
-                                <a href={Curriculo} download = "curriculo_joaopedro.pdf"><Buttons>CV em PDF</Buttons></a>
+                                <a href={Curriculo} download = "curriculo_joaopedro.pdf"><Buttons>CV em PDF <i class="fa fa-download"></i></Buttons></a>
 
 
                             </FSLTxt>
@@ -47,13 +47,11 @@ import Experiencias from '../cvSections/Experiências profissionais/Experiencias
                             </IconsWrapperR>
                         </FSRight>
                     </FirstSection>
-                    
+                
 
-
-                        <SobreMim/>
-    
+                        <SobreMim id="section1"/>
+                        <Habilidades/>    
                         <Educação/>
-                        {/* <Habilidades/> */}
                         {/* <Experiencias/> */}
 
                 </MainBody>

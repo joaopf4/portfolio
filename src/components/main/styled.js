@@ -66,6 +66,10 @@ export const FSLTxt = styled.div `
        font-size: 0.8rem;
        text-align: justify;
     }
+    a{
+      width: fit-content;
+      height: 0px;
+    }
     @media(max-width: 620px){
       margin: auto 0 auto 7vw;
   }
@@ -92,7 +96,6 @@ export const FSRight = styled.div `
     display: none; 
     @media(max-width: 620px){
     display: flex;
-
     overflow:visible;
     width: 100%;
     justify-content: space-evenly;
