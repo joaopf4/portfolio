@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {
 
-        const [HambDisplay, setHambDisplay] = React.useState(true)
+        const [HambDisplay, setHambDisplay] = React.useState(false)
 
       return (
         <MainDivHeader>
@@ -14,11 +14,11 @@ function Header() {
                 João Pedro
             </CvName>
 
-            <NavUl display={HambDisplay ? "none": "inline-grid" }> 
+            <NavUl open={HambDisplay}> 
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#section1">Sobre mim</a></li> {/*preciso passar essa section1 por props */}
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#habilidades">Habilidades</a></li>
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#educacao">Educação</a></li>
-                <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#about">Meus projetos</a></li>
+                <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#projetos">Meus projetos</a></li>
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#about">Contato</a></li>
             </NavUl>    
             <HambIcon onClick={()=> setHambDisplay(!HambDisplay)}>

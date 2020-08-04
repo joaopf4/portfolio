@@ -9,13 +9,7 @@ export const MainBody = styled.div `
     background-color: white;
     /* padding-top: 50px; */
 `
-export const MainGrid = styled.div `
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    height: inherit;
-    grid-gap: 28px;
-`
+
 export const FirstSection = styled.div `
   width: 100%; 
   background-image: url(${ImgBg}) ;
@@ -41,17 +35,17 @@ export const FSLeft = styled.div `
   `
 export const FSLTxt = styled.div `
     display: flex;
-    /* margin: 20px 0px 10% 20px; */
+    height: 35%;
+    justify-content: space-between;
     flex-direction: column;
     margin-left: 7vw;
     color: white;
     h1{
         font-size: 2rem;
-        max-width: 200px;
         margin: 6px 0px;
-        /* @media(min-width: 1010px) {
-            width: unset;
-        } */
+        @media(min-width: 900px){
+          font-size: 3rem;
+        }
     }
     h2{
         margin: 6px 0px;

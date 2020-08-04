@@ -40,14 +40,15 @@ export const NavUl = styled.ul `
         }
     }
     @media(max-width: 900px){
-        display: ${props => props.display};
+        /* display: ${props => props.display}; */
+        display: inline-grid;
+        transform: translateY(${props => props.open ? "0px" : "-305px" });
         list-style-type: none;
         padding: 50px 0px 0 0;
         position: absolute;
         right: 0px;
-        width: 300px;
-        z-index:1;
-        transition: 1s;
+        width: 100%;
+        transition: 0.7s;
         li {
             background-color: black;
             border-bottom: 1px solid ${theme.jeans};
