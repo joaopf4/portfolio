@@ -15,7 +15,11 @@ export const SectionHeader = styled.div `
     margin: 35px auto;
     font-size: 40px;
     white-space: nowrap;
-    font-weight: 200;
+    font-weight: 300;
+    @media(max-width: 520px){
+        font-size: 27px;
+        margin: 50px auto 20px;
+    }
 `   
 export const SectionText = styled.p `
     margin: 0 auto;
@@ -33,6 +37,9 @@ export const SectionText = styled.p `
 }
     p{
       margin: 3px;
+      @media(max-width: 520px){
+      font-size: 15px;
+      }
     }
 
 

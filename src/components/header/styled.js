@@ -47,6 +47,7 @@ export const NavUl = styled.ul `
         right: 0px;
         width: 300px;
         z-index:1;
+        transition: 1s;
         li {
             background-color: black;
             border-bottom: 1px solid ${theme.jeans};
@@ -102,11 +103,13 @@ export const UpDivHeader = styled.div `
     box-sizing: border-box;
    
 `   
-export const CvName = styled.p `
+export const CvName = styled.a `
     font-size: 25px;
+    text-decoration: none;
     margin: 0 0 0 30px;  
     font-weight: bold;
-    color: ${theme.darkBlue};  
+    color: ${theme.darkBlue}; 
+    cursor: pointer; 
 `
 export const NameAndUnderWrapper = styled.div ``
 export const NameAndQrWrapper = styled.div`

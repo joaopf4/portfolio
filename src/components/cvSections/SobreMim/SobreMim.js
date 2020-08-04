@@ -4,14 +4,14 @@ import {Section, SectionHeader, SectionText} from './styled';
     class SobreMim extends React.Component {
         render() {
             return (
-                        <Section>
+                        <Section id="section1">
                             <SectionHeader>Sobre mim</SectionHeader>
                             <SectionText>
                                 <p>                                    
                                 Muito prazer! Me chamo João Pedro, e é uma honra recebê-lo em meu portfólio!  
                                 </p>
                                 <p>
-                                Sou um jovem Belorizontino a poucos passos de entrar na casa dos 30, que vem 
+                                Sou um jovem Belorizontino a poucos passos de entrar na casa dos 30, e que vem 
                                 dedicando o seu último ano ao estudo de desenvolvimento-web full stack. 
                                 </p>
                                 <p>
@@ -20,9 +20,9 @@ import {Section, SectionHeader, SectionText} from './styled';
                                 com o front-end.
                                 </p>
                                 <p>                                    
-                                Para isso, em 2019 participei do mês de imersão com a <a href="www.gamacademy.com" target="blank">Gama Academy</a>,
+                                Para isso, em 2019 participei do mês de imersão com a <a href="https://gama.academy/" target="blank">Gama Academy</a>,
                                 e agora em 2020 dediquei o meu primeiro semestre ao curso de desenvolvimento web full-stack da 
-                                <a href="www.labenu.com" target="blank"> Escola Labenu</a>, onde tive a oportunidade de criar aplicações desafiadoras 
+                                <a href="https://www.labenu.com.br" target="blank"> Escola Labenu</a>, onde tive a oportunidade de criar aplicações desafiadoras 
                                 e edificantes para o meu conhecimento.
                                 </p>
                                 <p>                                    
@@ -34,8 +34,6 @@ import {Section, SectionHeader, SectionText} from './styled';
                                 
                             </SectionText>
                         </Section>
-
-
                 );
             }
           }

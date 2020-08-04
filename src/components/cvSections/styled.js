@@ -13,7 +13,7 @@ export const CardContents = styled.div `
     width: inherit; 
 
     background-color: ${theme.mediumpacityBlue};
-    height: fit-content;
+    height: 1000px;
     display: flex; 
     flex-direction: column;
 `
