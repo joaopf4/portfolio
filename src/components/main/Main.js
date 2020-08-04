@@ -7,6 +7,7 @@ import Educação from '../cvSections/Educação/Educação';
 import Curriculo from '../../documents/curriculo_joaopedro.pdf'
 import Habilidades from '../cvSections/Habilidades/Habilidades';
 import Experiencias from '../cvSections/Experiências profissionais/Experiencias';
+import Projetos from '../cvSections/MeusProjetos/MeusProjetos';
 
     class Main extends React.Component {
         render() {
@@ -17,18 +18,8 @@ import Experiencias from '../cvSections/Experiências profissionais/Experiencias
                             <FSLTxt>
                                 <h1>Eu sou o João Pedro!</h1>
                                 <h2>Desenvolvedor Web Full Stack</h2>
-                                {/* <p>
-                                Muito prazer! Me chamo João Pedro, e é uma honra recebê-lo em meu portfólio!        
-                                <br/>Sou um jovem Belorizontino a poucos passos de entrar na casa dos 30, que vem 
-                                dedicando os últimos 2 anos ao aprendizado de desenvolvimento-web full stack.                                 
-                                <br/>Adoro desenvolver front-end e pesquisar sobre responsividade e UX/UI.
-                                <br/>Abaixo, algumas stacks que possuo maior domínio, e um link para baixar meu currículo em PDF:                   
-                            </p> */}
                                 <p> ReactJS | HTML | CSS | JavaScript | TypeScript | MySQL | AWS | Firebase</p>
-
                                 <a href={Curriculo} download = "curriculo_joaopedro.pdf"><Buttons>CV em PDF <i class="fa fa-download"></i></Buttons></a>
-
-
                             </FSLTxt>
                             <IconsWrapperL>
                                 <IconLinks href='http://www.instagram.com/joaopfa' target="blank"><i class="fab fa-instagram"></i> </IconLinks>
@@ -47,12 +38,10 @@ import Experiencias from '../cvSections/Experiências profissionais/Experiencias
                             </IconsWrapperR>
                         </FSRight>
                     </FirstSection>
-                
-
-                        <SobreMim id="section1"/>
+                        <SobreMim/>
                         <Habilidades/>    
                         <Educação/>
-                        {/* <Experiencias/> */}
+                        <Projetos/>
 
                 </MainBody>
                 );
