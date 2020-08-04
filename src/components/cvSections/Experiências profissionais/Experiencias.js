@@ -24,8 +24,6 @@ via Whats App, ajudar em rotinas da casa e informar hóspedes sobre a cena cultu
 elaboração de planilhas e apresentações em Power Point.</ItenLista>
                             </Lista>
                         </CardContents>
-
-
                 );
             }
           }
