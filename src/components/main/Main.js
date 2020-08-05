@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainGrid, FirstSection, MainBody, FSLeft, FSRight, FSLTxt,
+import {FirstSection, MainBody, FSLeft, FSRight, FSLTxt,
 IconsWrapperR, IconsWrapperL} from './styled';
 import {IconLinks, Buttons} from '../generalComps/styled'
 import SobreMim from '../SobreMim/SobreMim';
