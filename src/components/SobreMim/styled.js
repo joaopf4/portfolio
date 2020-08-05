@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {theme} from "../../../Theme/index";
+import {theme} from "../../Theme/index";
 
 export const Section = styled.div `
     width: inherit; 

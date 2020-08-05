@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import {theme} from "../../../Theme/index";
+import {theme} from "../../Theme/index";
 
 export const Section = styled.div `
     width: inherit; 
-    color: ${theme.darkBlue};  
-    background-color: ${theme.lowpacityBlue};
+    color: white;  
+    background-color: ${theme.jeans};
     height:fit-content;
     display: flex; 
     flex-direction: column;
@@ -34,42 +34,29 @@ export const SectionText = styled.div `
             color: ${theme.lightBlue};
         }
     }
-
-    @media(max-width: 1010px){
+    @media(max-width: 620px){
         flex-direction: column;
         align-items: center;
     }
 `
-export const StackAbilities = styled.div ` 
-    margin: 0px 16px;
+export const StackAbilities = styled.div `
     text-align: left;
     width: 40%;
-    background-color: ${theme.creamWhite};
-    border-radius: 16px 0px 16px 0px;
-    padding: 10px;
-    a{
-        color: inherit;
-    }
     h1{
-        font-size: 25px;
+        font-size: 40px;
         font-weight: 600;
         @media(max-width: 520px){
-        font-size: 22px;
+        font-size: 27px;
         }
     }
     p{
-        :first-of-type{
-        font-size: 18px;
-        margin-bottom: 10px;
-        }
       margin: 3px;
       @media(max-width: 520px){
       font-size: 15px;
       }
     }
-    @media(max-width: 1010px){
-        width: 90%;
-        margin: 16px 0px;
+    @media(max-width: 620px){
+        width: 85%;
     }
 `
 export const Abilities = styled.span `
