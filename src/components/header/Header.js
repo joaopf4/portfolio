@@ -1,6 +1,6 @@
 import React from 'react';
 import {MainDivHeader, HambIcon, CvName, NavUl} from './styled'
-import { Link, animateScroll as scroll } from "react-scroll";
+
 
 function Header() {
 
@@ -17,7 +17,7 @@ function Header() {
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#habilidades">Habilidades</a></li>
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#educacao">Educação</a></li>
                 <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#projetos">Meus projetos</a></li>
-                <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#about">Contato</a></li>
+                <li><a onClick={()=> setHambDisplay(!HambDisplay)} href="#contato">Contato</a></li>
             </NavUl>    
             <HambIcon onClick={()=> setHambDisplay(!HambDisplay)}>
                 <a > 

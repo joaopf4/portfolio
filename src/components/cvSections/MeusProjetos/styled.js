@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {theme} from "../../../Theme/index";
+import {Buttons} from "../../generalComps/styled"
 
 export const Section = styled.div `
     width: inherit; 
@@ -80,5 +81,15 @@ export const ProjectText = styled.div `
         display: block;
         color: ${theme.darkBlue};
         font-weight: 700;
+    }
+`
+export const MaisProjetos = styled(Buttons) `
+    display: block;
+    margin: 15px auto;
+    a{
+        margin-right: 10px;
+        :hover{
+            color: white;
+        }
     }
 `

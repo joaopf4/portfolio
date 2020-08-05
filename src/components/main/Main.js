@@ -7,6 +7,8 @@ import Educação from '../cvSections/Educação/Educação';
 import Curriculo from '../../documents/curriculo_joaopedro.pdf'
 import Habilidades from '../cvSections/Habilidades/Habilidades';
 import Projetos from '../cvSections/MeusProjetos/MeusProjetos';
+import Contato from '../cvSections/Contato/Contato';
+import Footer from '../cvSections/Footer/Footer';
 
     class Main extends React.Component {
         render() {
@@ -41,6 +43,8 @@ import Projetos from '../cvSections/MeusProjetos/MeusProjetos';
                         <Habilidades/>    
                         <Educação/>
                         <Projetos/>
+                        <Contato/>
+                        <Footer/>
 
                 </MainBody>
                 );
