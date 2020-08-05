@@ -1,7 +1,5 @@
 import React from 'react';
-import {MainDivHeader, HambIcon, CvName, CvUnderName, QrCodeLIn, 
-    NameAndUnderWrapper, NameAndQrWrapper, DownDivHeader, ContactsDiv, 
-    LittleInfo, NavUl, IconLinks, AddressDiv} from './styled'
+import {MainDivHeader, HambIcon, CvName, NavUl} from './styled'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {

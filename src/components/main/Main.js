@@ -6,7 +6,6 @@ import SobreMim from '../cvSections/SobreMim/SobreMim';
 import Educação from '../cvSections/Educação/Educação';
 import Curriculo from '../../documents/curriculo_joaopedro.pdf'
 import Habilidades from '../cvSections/Habilidades/Habilidades';
-import Experiencias from '../cvSections/Experiências profissionais/Experiencias';
 import Projetos from '../cvSections/MeusProjetos/MeusProjetos';
 
     class Main extends React.Component {

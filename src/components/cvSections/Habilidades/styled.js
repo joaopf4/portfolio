@@ -15,7 +15,6 @@ export const SectionHeader = styled.h1 `
     font-size: 40px;
     font-weight: 300;
     @media(max-width: 520px){
-        width: 70%;
         font-size: 27px;
         margin: 50px auto 20px;
     }
@@ -35,7 +34,6 @@ export const SectionText = styled.div `
             color: ${theme.lightBlue};
         }
     }
-
     @media(max-width: 620px){
         flex-direction: column;
         align-items: center;
