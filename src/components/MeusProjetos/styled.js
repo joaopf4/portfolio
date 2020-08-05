@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import {theme} from "../../../Theme/index";
+import {theme} from "../../Theme/index";
+import {Buttons} from "../generalComps/styled"
 
 export const Section = styled.div `
     width: inherit; 
-    color: white;  
-    background-color: ${theme.jeans};
+    color: ${theme.darkBlue};  
+    background-color: ${theme.creamWhite};
     height:fit-content;
     display: flex; 
     flex-direction: column;
@@ -23,8 +24,6 @@ export const SectionText = styled.div `
     margin: 0 auto;
     width: 85%;
     text-align: justify;
-    display: flex;
-    justify-content: space-evenly;
     line-height: 26px;
     margin-bottom: 35px;
     a{
@@ -39,9 +38,11 @@ export const SectionText = styled.div `
         align-items: center;
     }
 `
-export const StackAbilities = styled.div `
+export const Projects = styled.div `
     text-align: left;
-    width: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
     h1{
         font-size: 40px;
         font-weight: 600;
@@ -50,26 +51,45 @@ export const StackAbilities = styled.div `
         }
     }
     p{
+        :first-of-type{
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
       margin: 3px;
       @media(max-width: 520px){
       font-size: 15px;
       }
     }
-    @media(max-width: 620px){
+    @media(max-width: 1010px){
         width: 85%;
+        flex-direction: column-reverse;
     }
 `
-export const Abilities = styled.span `
-    border-radius: 12px;
-    background-color: ${theme.lightBlue};
-    padding: 6px;
-    font-weight: 700;
-    width: fit-content;
-    margin: 5px;
-    white-space: nowrap;
+export const ThumbNail = styled.div `
+    height: 100%;
+    padding: 20px;
+    img{
+        width: 80%;
+        min-width: 220px;
+    }
 `
-export const AbilitiesGroup = styled.div `
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+export const ProjectText = styled.div `
+    height: 100%;
+    padding: 20px;
+    a{  
+        width: fit-content;
+        display: block;
+        color: ${theme.darkBlue};
+        font-weight: 700;
+    }
+`
+export const MaisProjetos = styled(Buttons) `
+    display: block;
+    margin: 15px auto;
+    a{
+        margin-right: 10px;
+        :hover{
+            color: white;
+        }
+    }
 `

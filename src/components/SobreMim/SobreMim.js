@@ -12,12 +12,12 @@ import {Section, SectionHeader, SectionText} from './styled';
                                 </p>
                                 <p>
                                 Sou um jovem Belorizontino a poucos passos de entrar na casa dos 30, e que vem 
-                                dedicando o seu último ano ao estudo de desenvolvimento-web full stack. 
+                                dedicando o seu último ano ao estudo de desenvolvimento web full-stack. 
                                 </p>
                                 <p>
                                 Com formação em Publicidade e Propaganda e experiência que vai desde Gerente de Hostel à organizador
-                                de passeios, corridas e oficinas mecânicas de bicicleta, venho agora buscar conhecimento e experiência 
-                                com o front-end.
+                                de passeios, corridas e oficinas de bicicleta, no momento venho me dedicando ao aprendizado de desenvolvimento,
+                                com uma atenção especial com o front-end, stack pela qual desperto maior interesse de atuação.
                                 </p>
                                 <p>                                    
                                 Para isso, em 2019 participei do mês de imersão com a <a href="https://gama.academy/" target="blank">Gama Academy</a>,

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {theme} from "../../../Theme/index";
-import {IconLinks} from "../../generalComps/styled";
+import {theme} from "../../Theme/index";
+import {IconLinks} from "../generalComps/styled";
 
 export const Section = styled.div `
     width: inherit; 

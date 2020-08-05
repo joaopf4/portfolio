@@ -1,8 +1,8 @@
 import React from 'react';
 import {Section, SectionHeader, Projects, SectionText, ThumbNail, ProjectText, MaisProjetos} from './styled';
-import Whats4 from '../../../img/thumbs/whats4.gif'
-import FutureEats from '../../../img/thumbs/futureEats.gif'
-import Eddit from '../../../img/thumbs/4eddit.gif'
+import Whats4 from '../../img/thumbs/whats4.gif'
+import FutureEats from '../../img/thumbs/futureEats.gif'
+import Eddit from '../../img/thumbs/4eddit.gif'
 
 class Projetos extends React.Component {
 render() {

@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import {theme} from "../../../Theme/index";
-import {Buttons} from "../../generalComps/styled"
+import {theme} from "../../Theme/index";
 
 export const Section = styled.div `
     width: inherit; 
     color: ${theme.darkBlue};  
-    background-color: ${theme.creamWhite};
+    background-color: ${theme.lowpacityBlue};
     height:fit-content;
     display: flex; 
     flex-direction: column;
@@ -24,6 +23,8 @@ export const SectionText = styled.div `
     margin: 0 auto;
     width: 85%;
     text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
     line-height: 26px;
     margin-bottom: 35px;
     a{
@@ -33,27 +34,33 @@ export const SectionText = styled.div `
             color: ${theme.lightBlue};
         }
     }
-    @media(max-width: 620px){
+
+    @media(max-width: 1010px){
         flex-direction: column;
         align-items: center;
     }
 `
-export const Projects = styled.div `
+export const StackAbilities = styled.div ` 
+    margin: 0px 16px;
     text-align: left;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    width: 40%;
+    background-color: ${theme.creamWhite};
+    border-radius: 16px 0px 16px 0px;
+    padding: 10px;
+    a{
+        color: inherit;
+    }
     h1{
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 600;
         @media(max-width: 520px){
-        font-size: 27px;
+        font-size: 22px;
         }
     }
     p{
         :first-of-type{
-            margin-top: -10px;
-            margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
         }
       margin: 3px;
       @media(max-width: 520px){
@@ -61,35 +68,21 @@ export const Projects = styled.div `
       }
     }
     @media(max-width: 1010px){
-        width: 85%;
-        flex-direction: column-reverse;
+        width: 90%;
+        margin: 16px 0px;
     }
 `
-export const ThumbNail = styled.div `
-    height: 100%;
-    padding: 20px;
-    img{
-        width: 80%;
-        min-width: 220px;
-    }
+export const Abilities = styled.span `
+    border-radius: 12px;
+    background-color: ${theme.lightBlue};
+    padding: 6px;
+    font-weight: 700;
+    width: fit-content;
+    margin: 5px;
+    white-space: nowrap;
 `
-export const ProjectText = styled.div `
-    height: 100%;
-    padding: 20px;
-    a{  
-        width: fit-content;
-        display: block;
-        color: ${theme.darkBlue};
-        font-weight: 700;
-    }
-`
-export const MaisProjetos = styled(Buttons) `
-    display: block;
-    margin: 15px auto;
-    a{
-        margin-right: 10px;
-        :hover{
-            color: white;
-        }
-    }
+export const AbilitiesGroup = styled.div `
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
 `
