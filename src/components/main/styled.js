@@ -7,7 +7,6 @@ export const MainBody = styled.div `
     width: inherit;
     height: inherit;
     background-color: white;
-    /* padding-top: 50px; */
 `
 
 export const FirstSection = styled.div `

@@ -1,14 +1,14 @@
 import React from 'react';
 import {FirstSection, MainBody, FSLeft, FSRight, FSLTxt,
 IconsWrapperR, IconsWrapperL} from './styled';
-import {IconLinks, Buttons} from '../generalComps/styled'
-import SobreMim from '../SobreMim/SobreMim';
-import Educação from '../Educação/Educação';
+import {IconLinks, Buttons} from '../GeneralComps/styled'
+import SobreMim from '../AboutMe';
+import Educação from '../Education';
 import Curriculo from '../../documents/curriculo_joaopedro.pdf'
-import Habilidades from '../Habilidades/Habilidades';
-import Projetos from '../MeusProjetos/MeusProjetos';
-import Contato from '../Contato/Contato';
-import Footer from '../Footer/Footer';
+import Habilidades from '../Skills';
+import Projetos from '../Projects';
+import Contato from '../Contact';
+import Footer from '../Footer';
 
     class Main extends React.Component {
         render() {

@@ -4,7 +4,7 @@ import {Section, SectionHeader, StackAbilities, SectionText} from './styled';
     class Educação extends React.Component {
         render() {
             return (
-                <Section id="educacao">
+                <Section id="education">
                 <SectionHeader>Educação</SectionHeader>
                     <SectionText>
                         <StackAbilities>

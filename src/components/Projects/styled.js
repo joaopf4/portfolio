@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {theme} from "../../Theme/index";
-import {Buttons} from "../generalComps/styled"
+import {Buttons} from "../GeneralComps/styled"
 
 export const Section = styled.div `
     width: inherit; 
@@ -38,7 +38,7 @@ export const SectionText = styled.div `
         align-items: center;
     }
 `
-export const Projects = styled.div `
+export const StyledProjects = styled.div `
     text-align: left;
     width: 100%;
     display: flex;

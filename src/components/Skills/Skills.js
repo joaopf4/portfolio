@@ -1,10 +1,10 @@
 import React from 'react';
 import {Section, SectionHeader, StackAbilities, SectionText} from './styled';
 
-    class Habilidades extends React.Component {
+    class Skills extends React.Component {
         render() {
             return (
-                <Section id="habilidades">
+                <Section id="skills">
                     <SectionHeader>Habilidades técnicas</SectionHeader>
                         <SectionText>
                             <StackAbilities>
@@ -35,4 +35,4 @@ import {Section, SectionHeader, StackAbilities, SectionText} from './styled';
             }
           }
 
-          export default Habilidades;
+          export default Skills;

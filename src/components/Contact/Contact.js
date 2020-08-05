@@ -2,10 +2,10 @@ import React from 'react';
 import {Section, SectionHeader, SectionText, IconsFooter, Icons} from './styled';
 
 
-    class Contato extends React.Component {
+    class Contact extends React.Component {
         render() {
             return (
-                        <Section id="contato">
+                        <Section id="contact">
                             <SectionHeader>Faça contato!</SectionHeader>
                             <SectionText>
                                 <p>
@@ -28,4 +28,4 @@ import {Section, SectionHeader, SectionText, IconsFooter, Icons} from './styled'
             }
           }
 
-          export default Contato;
+          export default Contact;

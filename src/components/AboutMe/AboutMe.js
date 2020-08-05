@@ -1,10 +1,10 @@
 import React from 'react';
 import {Section, SectionHeader, SectionText} from './styled';
 
-    class SobreMim extends React.Component {
+    class AboutMe extends React.Component {
         render() {
             return (
-                        <Section id="section1">
+                        <Section id="aboutMe">
                             <SectionHeader>Sobre mim</SectionHeader>
                             <SectionText>
                                 <p>                                    
@@ -16,8 +16,8 @@ import {Section, SectionHeader, SectionText} from './styled';
                                 </p>
                                 <p>
                                 Com formação em Publicidade e Propaganda e experiência que vai desde Gerente de Hostel à organizador
-                                de passeios, corridas e oficinas de bicicleta, no momento venho me dedicando ao aprendizado de desenvolvimento,
-                                com uma atenção especial com o front-end, stack pela qual desperto maior interesse de atuação.
+                                de passeios, corridas e oficinas de bicicleta, no momento venho me dedicando ao aprendizado de desenvolvimento web,
+                                com atenção especial ao front-end, stack pela qual desperto maior interesse de atuação.
                                 </p>
                                 <p>                                    
                                 Para isso, em 2019 participei do mês de imersão com a <a href="https://gama.academy/" target="blank">Gama Academy</a>,
@@ -38,4 +38,4 @@ import {Section, SectionHeader, SectionText} from './styled';
             }
           }
 
-          export default SobreMim;
+          export default AboutMe;

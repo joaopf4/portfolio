@@ -1,16 +1,16 @@
 import React from 'react';
-import {Section, SectionHeader, Projects, SectionText, ThumbNail, ProjectText, MaisProjetos} from './styled';
+import {Section, SectionHeader, StyledProjects, SectionText, ThumbNail, ProjectText, MaisProjetos} from './styled';
 import Whats4 from '../../img/thumbs/whats4.gif'
 import FutureEats from '../../img/thumbs/futureEats.gif'
 import Eddit from '../../img/thumbs/4eddit.gif'
 
-class Projetos extends React.Component {
+class Projects extends React.Component {
 render() {
     return (
-    <Section id="projetos">
+    <Section id="projects">
         <SectionHeader>Meus Projetos</SectionHeader>
             <SectionText>
-                <Projects>
+                <StyledProjects>
                     <ThumbNail>
                         <img src={Whats4}/>
                     </ThumbNail>
@@ -29,8 +29,8 @@ render() {
                          
                         </p>
                     </ProjectText>
-                </Projects>
-                <Projects>
+                </StyledProjects>
+                <StyledProjects>
                     <ThumbNail>
                         <img src={FutureEats}/>
                     </ThumbNail>
@@ -49,8 +49,8 @@ render() {
                          
                         </p>
                     </ProjectText>
-                </Projects>
-                <Projects>
+                </StyledProjects>
+                <StyledProjects>
                     <ThumbNail>
                         <img src={Eddit}/>
                     </ThumbNail>
@@ -70,7 +70,7 @@ render() {
                          
                         </p>
                     </ProjectText>
-                </Projects>
+                </StyledProjects>
                 <MaisProjetos><a href="https://github.com/joaopf4?tab=repositories" target="blank">Mais projetos</a>   <i class="fab fa-github"></i></MaisProjetos>
 
         </SectionText>
@@ -79,4 +79,4 @@ render() {
     }
     }
 
-    export default Projetos;
+    export default Projects;

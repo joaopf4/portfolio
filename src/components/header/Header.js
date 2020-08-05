@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainDivHeader, HambIcon, CvName, NavUl} from './styled'
+import {StyledHeader, HambIcon, CvName, NavUl} from './styled'
 
 
 function Header() {
@@ -9,24 +9,24 @@ function Header() {
           setHambDisplay(!hambDisplay)
         }
       return (
-        <MainDivHeader>
+        <StyledHeader>
             <CvName href="#eujoao">
                 João Pedro
             </CvName>
 
             <NavUl open={hambDisplay}> 
-                <li><a onClick={toogleHambDisplay} href="#section1">Sobre mim</a></li> {/*preciso passar essa section1 por props */}
-                <li><a onClick={toogleHambDisplay}  href="#habilidades">Habilidades</a></li>
-                <li><a onClick={toogleHambDisplay}  href="#educacao">Educação</a></li>
-                <li><a onClick={toogleHambDisplay}  href="#projetos">Meus projetos</a></li>
-                <li><a onClick={toogleHambDisplay}  href="#contato">Contato</a></li>
+                <li><a onClick={toogleHambDisplay} href="#aboutMe">Sobre mim</a></li> {/*preciso passar essa section1 por props */}
+                <li><a onClick={toogleHambDisplay}  href="#skills">Habilidades</a></li>
+                <li><a onClick={toogleHambDisplay}  href="#education">Educação</a></li>
+                <li><a onClick={toogleHambDisplay}  href="#projects">Meus projetos</a></li>
+                <li><a onClick={toogleHambDisplay}  href="#contact">Contato</a></li>
             </NavUl>    
             <HambIcon onClick={toogleHambDisplay} >
                 <a > 
                     <i class="fa fa-bars"></i>
                 </a>
             </HambIcon>
-        </MainDivHeader>
+        </StyledHeader>
       );
     }
   

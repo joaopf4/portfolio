@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {theme} from "../../Theme/index";
-import {IconLinks} from "../generalComps/styled";
+import {IconLinks} from "../GeneralComps/styled";
 
 export const Section = styled.div `
     width: inherit; 
@@ -10,7 +10,6 @@ export const Section = styled.div `
     display: flex; 
     flex-direction: column;
 `
-
 export const SectionHeader = styled.div `
     width: fit-content;
     margin: 35px auto;
