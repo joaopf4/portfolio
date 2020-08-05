@@ -40,12 +40,7 @@ export const NavUl = styled.ul `
         }
     }
     @media(max-width: 900px){
-        /* display: ${props => props.display}; */
         display: inline-grid;
-        /*transform: translateY(${props => props.open ? "0px" : "-305px" });*/
-        transform: scaleY(${props => props.open ? "1" : "0"});
-        transform-origin: top;
-        transition: transform 0.5s ease;
         list-style-type: none;
         padding: 50px 0px 0 0;
         position: absolute;
@@ -98,7 +93,6 @@ export const HambIcon = styled.span `
         }
     }
 `
-
 export const CvName = styled.a `
     font-size: 25px;
     text-decoration: none;
