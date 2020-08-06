@@ -10,7 +10,7 @@ export const Section = styled.div `
     flex-direction: column;
     padding: 30px 35px 40px;
     img{
-        border-radius: 16px 0px 16px 0px;
+        border-radius: 18px 0px 18px 0px;
         width: 400px;
         margin: 0 30px;
         @media(max-width:980px){
