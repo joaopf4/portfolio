@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import {FirstSection, MainBody, FSLeft, FSRight, FSLTxt,
 IconsWrapperR, IconsWrapperL} from './styled';
 import {IconLinks, Buttons} from '../GeneralComps/styled'
