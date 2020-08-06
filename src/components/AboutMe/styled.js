@@ -8,7 +8,7 @@ export const Section = styled.div `
     height:fit-content;
     display: flex; 
     flex-direction: column;
-    padding: 35px;
+    padding: 30px 35px 40px;
     img{
         border-radius: 16px 0px 16px 0px;
         width: 400px;
