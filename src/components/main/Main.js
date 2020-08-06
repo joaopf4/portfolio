@@ -4,7 +4,7 @@ IconsWrapperR, IconsWrapperL} from './styled';
 import {IconLinks, Buttons} from '../GeneralComps/styled'
 import SobreMim from '../AboutMe';
 import Educação from '../Education';
-import Curriculo from '../../documents/curriculo_joaopedro.pdf'
+import Curriculo from '../../Documents/curriculo_joaopedro.pdf'
 import Habilidades from '../Skills';
 import Projetos from '../Projects';
 import Contato from '../Contact';
