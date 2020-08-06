@@ -8,7 +8,7 @@ import EuPerfil from '../../Img/eu_perfil_quadrado.jpg'
                         <Section id="aboutMe">
                             <SectionHeader>Sobre mim</SectionHeader>
                             <AboutWrapper>                                
-                                <img src={EuPerfil}/>
+                                <img alt="Foto perfil João Pedro" src={EuPerfil}/>
                                 <SectionText>
                                     <p>                                    
                                     Muito prazer! Me chamo João Pedro, e é uma honra recebê-lo em meu portfólio!  
