@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 //import ImgBg from '../../img/eu_perfil_quadrado.jpg';
-import ImgBg from '../../Img/eu_trab.jpeg';
+import ImgBg from '../../img/eu_trab.jpeg';
 import {theme} from "../../Theme/index";
 
 export const MainBody = styled.div `

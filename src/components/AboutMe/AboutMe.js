@@ -1,6 +1,6 @@
 import React from 'react';
 import {Section, SectionHeader, SectionText, AboutWrapper} from './styled';
-import EuPerfil from '../../Img/eu_perfil_quadrado.jpg'
+import EuPerfil from '../../img/eu_perfil_quadrado.jpg'
 
     class AboutMe extends React.Component {
         render() {
