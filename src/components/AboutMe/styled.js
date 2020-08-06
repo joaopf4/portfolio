@@ -12,12 +12,13 @@ export const Section = styled.div `
     img{
         border-radius: 16px 0px 16px 0px;
         width: 400px;
-        margin: 0 20px;
+        margin: 0 30px;
         @media(max-width:980px){
             margin: 0 0 30px 0;
         }
         @media(max-width:620px){
             width: 73%;
+            margin: 0;
         }
     }
 `
