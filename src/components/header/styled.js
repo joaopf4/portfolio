@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from './node_modules/styled-components'
 import {theme} from "../../Theme/index"
 
 export const StyledHeader = styled.header `
