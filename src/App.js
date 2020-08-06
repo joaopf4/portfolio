@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/header/Header'
-import Main from './components/main/Main'
+import Header from './Components/Header'
+import Main from './Components/Main'
 import styled from 'styled-components'
 
 function App() {

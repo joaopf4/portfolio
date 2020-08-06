@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 //import ImgBg from '../../img/eu_perfil_quadrado.jpg';
-import ImgBg from '../../img/eu_trab.jpeg';
+import ImgBg from '../../Img/eu_trab.jpeg';
 import {theme} from "../../Theme/index";
 
 export const MainBody = styled.div `
     width: inherit;
     height: inherit;
     background-color: white;
-    /* padding-top: 50px; */
 `
 
 export const FirstSection = styled.div `
@@ -65,7 +64,7 @@ export const FSLTxt = styled.div `
       height: 0px;
     }
     @media(max-width: 620px){
-      margin: auto 0 auto 7vw;
+      margin: auto 0 auto 3vw;
   }
   `
 export const FSRight = styled.div `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {theme} from "../../Theme/index"
 
-export const MainDivHeader = styled.div `
+export const StyledHeader = styled.header `
     width: 100%;
     height: 50px;
     display: flex;
@@ -100,4 +100,5 @@ export const CvName = styled.a `
     font-weight: bold;
     color: ${theme.darkBlue}; 
     cursor: pointer; 
+    z-index: 1;
 `

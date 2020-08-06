@@ -1,13 +1,13 @@
 import React from 'react';
- import {Section} from './styled';
+ import {StyledFooter} from './styled';
 
 
      class Footer extends React.Component {
          render() {
              return (
-                         <Section id="footer">
+                         <StyledFooter>
                              © 2020 João Pedro Fonseca Achkar
-                         </Section>
+                         </StyledFooter>
                  );
              }
            }

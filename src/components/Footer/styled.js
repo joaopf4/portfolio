@@ -1,8 +1,7 @@
  import styled from 'styled-components'
  import {theme} from "../../Theme/index";
- import {IconLinks} from "../generalComps/styled";
 
- export const Section = styled.div `
+ export const StyledFooter = styled.footer `
      width: inherit; 
      color: ${theme.creamWhite};  
      background-color: ${theme.darkBlue};
