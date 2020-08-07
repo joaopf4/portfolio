@@ -3,13 +3,7 @@ import styled from 'styled-components';
 import ImgBg from '../../img/eu_trab.jpeg';
 import {theme} from "../../Theme/index";
 
-export const MainBody = styled.div `
-    width: inherit;
-    height: inherit;
-    background-color: white;
-`
-
-export const FirstSection = styled.div `
+export const StyledMainSection = styled.div `
   width: 100%; 
   background-image: url(${ImgBg}) ;
   background-size: 50%;

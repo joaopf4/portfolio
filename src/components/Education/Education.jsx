@@ -42,7 +42,7 @@ class Educação extends React.Component {
                     </EducCard>
                 </EducCardsWrapper>
             </Section>
-            );
-        }
-        }
+        );
+    }
+}
 export default Educação;

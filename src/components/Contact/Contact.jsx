@@ -1,5 +1,5 @@
 import React from 'react';
-import {SectionHeader, SectionText, IconsFooter, Icons} from './styled';
+import {SectionText, IconsFooter, Icons} from './styled';
 import Section from '../Section'
 import {theme} from "../../Theme";
 

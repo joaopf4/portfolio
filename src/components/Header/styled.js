@@ -79,7 +79,7 @@ export const HambIcon = styled.span `
             color: white;
         }
     } 
-    a{
+    p{  margin: 0px;
         color: ${theme.darkBlue};
         text-align: center;
         padding: 15px 14px;
