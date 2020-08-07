@@ -12,7 +12,7 @@ render() {
     <Section 
         id="projects"
         title="Projetos" 
-        bgColor={theme.white} 
+        bgColor={theme.creamWhite} 
         textColor={theme.darkBlue}   
     >
 
