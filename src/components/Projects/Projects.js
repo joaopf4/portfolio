@@ -1,16 +1,23 @@
 import React from 'react';
-import {Section, SectionHeader, StyledProjects, SectionText, ThumbNail, ProjectText, MaisProjetos} from './styled';
+import { SingleProject, ProjectsWrapper, ThumbNail, ProjectText, MoreProjects} from './styled';
 import Whats4 from '../../img/thumbs/whats4.gif'
 import FutureEats from '../../img/thumbs/futureEats.gif'
 import Eddit from '../../img/thumbs/4eddit.gif'
+import Section from '../Section'
+import {theme} from "../../Theme";
 
 class Projects extends React.Component {
 render() {
     return (        
-    <Section id="projects">
-        <SectionHeader>Meus Projetos</SectionHeader>
-            <SectionText>
-                <StyledProjects>
+    <Section 
+        id="projects"
+        title="Projetos" 
+        bgColor={theme.white} 
+        textColor={theme.darkBlue}   
+    >
+
+            <ProjectsWrapper>
+                <SingleProject>
                     <ThumbNail>
                         <img src={Whats4}/>
                     </ThumbNail>
@@ -29,8 +36,8 @@ render() {
                          
                         </p>
                     </ProjectText>
-                </StyledProjects>
-                <StyledProjects>
+                </SingleProject>
+                <SingleProject>
                     <ThumbNail>
                         <img src={FutureEats}/>
                     </ThumbNail>
@@ -49,8 +56,8 @@ render() {
                          
                         </p>
                     </ProjectText>
-                </StyledProjects>
-                <StyledProjects>
+                </SingleProject>
+                <SingleProject>
                     <ThumbNail>
                         <img src={Eddit}/>
                     </ThumbNail>
@@ -70,10 +77,10 @@ render() {
                          
                         </p>
                     </ProjectText>
-                </StyledProjects>
-                <MaisProjetos><a href="https://github.com/joaopf4?tab=repositories" target="blank">Mais projetos</a>   <i class="fab fa-github"></i></MaisProjetos>
+                </SingleProject>
+                <MoreProjects><a href="https://github.com/joaopf4?tab=repositories" target="blank">Mais projetos</a>   <i class="fab fa-github"></i></MoreProjects>
 
-        </SectionText>
+        </ProjectsWrapper>
     </Section>
     );
     }

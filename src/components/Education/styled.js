@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {theme} from "../../Theme/index";
+import {theme} from "../../Theme";
 
 export const Section = styled.div `
     width: inherit; 
@@ -19,14 +19,10 @@ export const SectionHeader = styled.h1 `
         margin: 50px auto 20px;
     }
 `   
-export const SectionText = styled.div `
+export const EducCardsWrapper = styled.div `
     margin: 0 auto;
-    width: 85%;
-    text-align: justify;
     display: flex;
-    justify-content: space-evenly;
     line-height: 26px;
-    margin-bottom: 35px;
     a{
         text-decoration: none;
         color: white;
@@ -40,19 +36,20 @@ export const SectionText = styled.div `
         align-items: center;
     }
 `
-export const StackAbilities = styled.div ` 
+export const EducCard = styled.div ` 
     margin: 0px 16px;
     text-align: left;
     width: 40%;
     background-color: ${theme.creamWhite};
     border-radius: 16px 0px 16px 0px;
-    padding: 10px;
+    padding: 18px;
     a{
         color: inherit;
     }
-    h1{
+    h4{
         font-size: 25px;
         font-weight: 600;
+        margin-top: 0;
         @media(max-width: 520px){
         font-size: 22px;
         }

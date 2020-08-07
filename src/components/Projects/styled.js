@@ -2,30 +2,11 @@ import styled from 'styled-components'
 import {theme} from "../../Theme/index";
 import {Buttons} from "../GeneralComps/styled"
 
-export const Section = styled.div `
-    width: inherit; 
-    color: ${theme.darkBlue};  
-    background-color: ${theme.creamWhite};
-    height:fit-content;
-    display: flex; 
-    flex-direction: column;
-`
-export const SectionHeader = styled.h1 `
-    width: fit-content;
-    margin: 35px auto;
-    font-size: 40px;
-    font-weight: 300;
-    @media(max-width: 520px){
-        font-size: 27px;
-        margin: 50px auto 20px;
-    }
-`   
-export const SectionText = styled.div `
+export const ProjectsWrapper = styled.div `
     margin: 0 auto;
     width: 85%;
     text-align: justify;
     line-height: 26px;
-    margin-bottom: 35px;
     a{
         text-decoration: none;
         color: white;
@@ -38,9 +19,10 @@ export const SectionText = styled.div `
         align-items: center;
     }
 `
-export const StyledProjects = styled.div `
+export const SingleProject = styled.div `
     text-align: left;
     width: 100%;
+
     display: flex;
     align-items: center;
     h1{
@@ -66,16 +48,18 @@ export const StyledProjects = styled.div `
     }
 `
 export const ThumbNail = styled.div `
-    height: 100%;
     padding: 20px;
     img{
         width: 80%;
         min-width: 220px;
+        max-width: 260px;
     }
 `
 export const ProjectText = styled.div `
-    height: 100%;
-    padding: 20px;
+    margin-left: 9vw;
+    @media(max-width: 1010px){
+    margin-left: 3vw;
+    }
     a{  
         width: fit-content;
         display: block;
@@ -83,9 +67,9 @@ export const ProjectText = styled.div `
         font-weight: 700;
     }
 `
-export const MaisProjetos = styled(Buttons) `
+export const MoreProjects = styled(Buttons) `
     display: block;
-    margin: 15px auto;
+    margin: auto;
     a{
         margin-right: 10px;
         :hover{
