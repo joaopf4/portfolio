@@ -44,7 +44,6 @@ export const NavUl = styled.ul `
         list-style-type: none;
         padding: 50px 0px 0 0;
         position: absolute;
-        right: 0px;
         width: 100%;
         li {
             transform: scaleY(${props => props.open ? "1" : "0"});
@@ -62,14 +61,43 @@ export const NavUl = styled.ul `
         }
   } 
 `
-export const HambIcon = styled.span `
+export const MenuIcon = styled.div `
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 11px auto 6px;
+    transition: 0.4s;
+    z-index: 1;
+        transform: rotate(${props => props.open ? "-45deg" : ""}) translate(${props => props.open ? "-9px, 6px" : ""});
+`
+export const MenuIcon2 = styled.div `
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px auto;
+    transition: 0.4s;
+    z-index: 1;
+    opacity: ${props => props.open ? "0" : "1"};
+`
+export const MenuIcon3 = styled.div `
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px auto;
+    transition: 0.4s;
+    transform: rotate(${props => props.open ? "45deg" : ""}) translate(${props => props.open ? "-8px, -8px" : ""});
+`
+
+export const HambIcon = styled.div `
      display: none;
     @media(max-width: 900px){
-        display: block;
-        margin-right: 20px;
-        z-index: 1;
+        display: inline-block;
+        cursor: pointer;
         width: 50px;
         height: 100%;
+        padding-top: auto;
+        z-index: 1;
+        margin-right: 20px;
         :hover {
             background-color: ${theme.mediumpacityBlue};
             color: white;
@@ -77,19 +105,6 @@ export const HambIcon = styled.span `
         :active {
             background-color: ${theme.lowpacityBlue};
             color: white;
-        }
-    } 
-    p{  margin: 0px;
-        color: ${theme.darkBlue};
-        text-align: center;
-        padding: 15px 14px;
-        text-decoration: none;
-        font-size: 26px;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        :hover{
-            cursor: pointer;
         }
     }
 `
