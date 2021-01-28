@@ -15,7 +15,7 @@ class MainSection extends React.Component {
                         <h1>Eu sou o João Pedro!</h1>
                         <h2>Desenvolvedor Web Full Stack</h2>
                         <p> ReactJS | HTML | CSS | JavaScript | TypeScript | MySQL | AWS | Firebase</p>
-                        <a href={Curriculo} download="curriculo_joaopedro.pdf"><Buttons>CV em PDF <i class="fa fa-download"></i></Buttons></a>
+                        <a href={Curriculo} download="Currículo João Pedro Fonseca.pdf"><Buttons>CV em PDF <i class="fa fa-download"></i></Buttons></a>
                     </FSLTxt>
                     <IconsWrapperL>
                         <IconLinks href='http://www.instagram.com/joaopfa' target="blank"><i class="fab fa-instagram"></i> </IconLinks>
