@@ -3,7 +3,7 @@ import {
     StyledMainSection, FSLeft, FSRight, FSLTxt,
     IconsWrapperR, IconsWrapperL
 } from './styled';
-import Curriculo from '../../documents/curriculo_joaopedro.pdf'
+import Curriculo from '../../documents/Currículo João Pedro Fonseca.pdf'
 import { IconLinks, Buttons } from '../GeneralComps/styled'
 
 class MainSection extends React.Component {
@@ -14,7 +14,7 @@ class MainSection extends React.Component {
                     <FSLTxt>
                         <h1>Eu sou o João Pedro!</h1>
                         <h2>Desenvolvedor Web Full Stack</h2>
-                        <p> ReactJS | HTML | CSS | JavaScript | TypeScript | MySQL | AWS | Firebase</p>
+                        <h2> ReactJS | HTML | CSS | JavaScript | TypeScript | GraphQl | NextJS | Firebase</h2>
                         <a href={Curriculo} download="Currículo João Pedro Fonseca.pdf"><Buttons>CV em PDF <i class="fa fa-download"></i></Buttons></a>
                     </FSLTxt>
                     <IconsWrapperL>
