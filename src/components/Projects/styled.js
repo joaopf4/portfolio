@@ -52,7 +52,7 @@ export const ThumbNail = styled.div `
     img{
         width: 80%;
         min-width: 220px;
-        max-width: 260px;
+        max-width: 220px;
     }
 `
 export const ProjectText = styled.div `
