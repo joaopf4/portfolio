@@ -3,6 +3,7 @@ import { SingleProject, ProjectsWrapper, ThumbNail, ProjectText, MoreProjects} f
 import Whats4 from '../../img/thumbs/whats4.gif'
 import FutureEats from '../../img/thumbs/futureEats.gif'
 import Eddit from '../../img/thumbs/4eddit.gif'
+import CyclingQuiz from '../../img/thumbs/cyclingquiz.gif'
 import Section from '../Section'
 import {theme} from "../../Theme";
 
@@ -16,6 +17,26 @@ class Projects extends React.Component {
             textColor={theme.darkBlue}   
         >
             <ProjectsWrapper>
+                    <SingleProject>
+                        <ThumbNail>
+                            <img alt="muckup-gif" src={CyclingQuiz}/>
+                        </ThumbNail>
+                        <ProjectText>
+                            <h1>Cycling Quiz</h1>
+                            <p>
+                                Front-end
+                            </p>
+                            <p>
+                                Projeto feito durante a imersão Allura em NextJS, onde fizemos um quiz utilizando NextJS como framework. 
+                                Personalizei o tema do quiz com meu principal Hobbie que é bicicleta!
+                            </p>
+                            <p>
+                            <a href="https://imersao-alura-nextjs.joaopf4.vercel.app/" target="blank">Deploy da aplicação</a> 
+                            <a href="https://github.com/joaopf4/imersao-alura-nextjs" target="blank">Repositório   <i class="fab fa-github"></i></a> 
+                            
+                            </p>
+                        </ProjectText>
+                    </SingleProject>
                     <SingleProject>
                         <ThumbNail>
                             <img alt="muckup-gif" src={Whats4}/>
