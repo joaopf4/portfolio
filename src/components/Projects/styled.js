@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {theme} from "../../Theme/index";
-import {Buttons} from "../GeneralComps/styled"
+import {Button} from "../GeneralComps/styled"
 
 export const ProjectsWrapper = styled.div `
     margin: 0 auto;
@@ -12,6 +12,10 @@ export const ProjectsWrapper = styled.div `
         color: white;
         :hover {
             color: ${theme.lightBlue};
+        }
+        :active{
+            transform: translateY(3px);
+            transition: .15s;
         }
     }
     @media(max-width: 620px){
@@ -67,7 +71,7 @@ export const ProjectText = styled.div `
         font-weight: 700;
     }
 `
-export const MoreProjects = styled(Buttons) `
+export const MoreProjects = styled(Button) `
     display: block;
     margin: auto;
     a{

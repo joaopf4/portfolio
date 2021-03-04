@@ -19,6 +19,9 @@ export const AboutWrapper = styled.div`
              width: 75%;
          }
      }
+     a {
+         font-weight: 600;
+     }
 `
 
 export const SectionText = styled.div `

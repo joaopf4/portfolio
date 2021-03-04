@@ -4,7 +4,7 @@ import {
     IconsWrapperR, IconsWrapperL
 } from './styled';
 import Curriculo from '../../documents/Currículo João Pedro Fonseca.pdf'
-import { IconLinks, Buttons } from '../GeneralComps/styled'
+import { IconLinks, Button } from '../GeneralComps/styled'
 
 class MainSection extends React.Component {
     render() {
@@ -15,7 +15,7 @@ class MainSection extends React.Component {
                         <h1>Eu sou o João Pedro!</h1>
                         <h2>Desenvolvedor Web Full Stack</h2>
                         <h2> ReactJS | HTML | CSS | JavaScript | TypeScript | GraphQl | NextJS | Firebase</h2>
-                        <a href={Curriculo} download="Currículo João Pedro Fonseca.pdf"><Buttons>CV em PDF <i class="fa fa-download"></i></Buttons></a>
+                        <a href={Curriculo} download="Currículo João Pedro Fonseca.pdf"><Button>CV em PDF <i class="fa fa-download"></i></Button></a>
                     </FSLTxt>
                     <IconsWrapperL>
                         <IconLinks href='http://www.instagram.com/joaopfa' target="blank"><i class="fab fa-instagram"></i> </IconLinks>
