@@ -6,6 +6,7 @@ import Eddit from '../../img/thumbs/4eddit.gif'
 import CyclingQuiz from '../../img/thumbs/cyclingquiz.gif'
 import Section from '../Section'
 import {theme} from "../../Theme";
+import { Button } from '../GeneralComps/styled'
 
 class Projects extends React.Component {
     render() {

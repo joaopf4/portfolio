@@ -17,7 +17,7 @@ export const IconLinks = styled.a `
         font-size: 1.9rem;
     }
 `
-export const Buttons = styled.button `
+export const Button = styled.button `
     border-radius: 8px;
     box-shadow: 2px 2px 10px #000;
     padding: 15px;
@@ -34,7 +34,9 @@ export const Buttons = styled.button `
         background-color: ${theme.lightBlue};
     }
     :active {
-        background-color: ${theme.jeans};
+        background-color: ${theme.jeans};    
+        transform: translateY(3px);
+        transition: .15s;
     }
     @media(max-width: 520px){
         font-weight: 400;
