@@ -26,7 +26,7 @@ export const ProjectsWrapper = styled.div `
 export const SingleProject = styled.div `
     text-align: left;
     width: 100%;
-
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     h1{
