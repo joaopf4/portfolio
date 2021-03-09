@@ -13,8 +13,8 @@ class Project extends Component {
                     <p>{this.props.type}</p>
                     <p>{this.props.description}</p>
                     <p>
-                        <a href={this.props.deploy}>Deploy da aplicação</a>
-                        <a href={this.props.repository}>Repositório <i class="fab fa-github"></i></a>
+                        <a href={this.props.deploy} target="_blank" rel='noreferrer'>Deploy da aplicação</a>
+                        <a href={this.props.repository} target="_blank" rel='noreferrer'>Repositório <i class="fab fa-github"></i></a>
                     </p>
                 </ProjectText>
             </SingleProject>

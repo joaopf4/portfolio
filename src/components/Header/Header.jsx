@@ -19,14 +19,11 @@ function Header() {
         <li><a onClick={toogleHambDisplay} href="#projects">Meus projetos</a></li>
         <li><a onClick={toogleHambDisplay} href="#contact">Contato</a></li>
       </NavUl>
+      
       <HambIcon onClick={toogleHambDisplay} >
-        {/* <p href="">
-          <i class="fa fa-bars"></i>
-        </p> */}
         <MenuIcon open={hambDisplay}></MenuIcon>
         <MenuIcon2 open={hambDisplay}></MenuIcon2>
         <MenuIcon3 open={hambDisplay}></MenuIcon3>
-   
       </HambIcon>
     </StyledHeader>
   );
