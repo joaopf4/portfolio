@@ -22,7 +22,6 @@ export const NavUl = styled.ul `
         float: left;
         height: 100%;
         cursor: pointer;
-        display: block;
         color: ${theme.darkBlue};
         font-weight: bold;
         text-align: center;
@@ -39,7 +38,7 @@ export const NavUl = styled.ul `
         }
     }
     @media(max-width: 900px){
-        display: inline-grid;
+        display: block; 
         list-style-type: none;
         padding: 50px 0px 0 0;
         position: absolute;
@@ -50,12 +49,9 @@ export const NavUl = styled.ul `
             transform-origin: top;
             transition: transform 0.5s ease;
             background-color: black;
+            padding: 24px 30px;
             border-bottom: 1px solid ${theme.jeans};
-            transform: scaleY(${props => props.open ? "1" : "0"});
-            transform-origin: top;
-            transition: transform 0.5s ease;
             color: white;
-            align-self: right;
         }
   } 
 `

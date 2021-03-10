@@ -17,7 +17,6 @@ function Header() {
           smooth={true}
           offset={-50}
           duration={500}
-          onClick={toogleHambDisplay}
         >
           João Pedro
         </Link>
