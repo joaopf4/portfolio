@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import {theme} from "../../Theme/index";
-import {Button} from "../GeneralComps/styled"
 
 export const ProjectsWrapper = styled.div `
     margin: 0 auto;
     width: 85%;
     text-align: justify;
     line-height: 26px;
+    height: 500px;
+    overflow:auto;
     a{
         text-decoration: none;
         color: white;
@@ -71,13 +72,8 @@ export const ProjectText = styled.div `
         font-weight: 700;
     }
 `
-export const MoreProjects = styled(Button) `
+export const MoreProjects = styled.a `
     display: block;
     margin: auto;
-    a{
-        margin-right: 10px;
-        :hover{
-            color: white;
-        }
-    }
+    width: fit-content;
 `

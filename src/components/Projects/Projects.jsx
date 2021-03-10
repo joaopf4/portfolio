@@ -8,6 +8,7 @@ import Section from '../Section'
 import { theme } from '../../Theme';
 import { ProjectsStrings } from './strings'
 import Project from './SingleProject';
+import {Button} from '../GeneralComps/styled'
 
 class Projects extends React.Component {
 
@@ -77,8 +78,11 @@ class Projects extends React.Component {
                         />
                     )
                 })}
-                <MoreProjects><a href="https://github.com/joaopf4?tab=repositories" target="blank">Mais projetos</a>   <i class="fab fa-github"></i></MoreProjects>
             </ProjectsWrapper>
+            <br/><br/>
+            <MoreProjects href="https://github.com/joaopf4?tab=repositories" target="_blank">
+                <Button>Mais projetos  <i class="fab fa-github"></i></Button>
+            </MoreProjects>
         </Section>
         );
     }
