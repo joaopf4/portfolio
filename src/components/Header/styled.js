@@ -18,11 +18,11 @@ export const NavUl = styled.ul `
     height: inherit;
     background-color: transparent;
     opacity: 1;
+    }
     li {
         float: left;
         height: 100%;
-    }
-    li a {
+        cursor: pointer;
         display: block;
         color: ${theme.darkBlue};
         font-weight: bold;
@@ -38,7 +38,7 @@ export const NavUl = styled.ul `
         :active {
             background-color: ${theme.lowpacityBlue};
         }
-    }
+
     @media(max-width: 900px){
         display: inline-grid;
         list-style-type: none;
@@ -46,13 +46,12 @@ export const NavUl = styled.ul `
         position: absolute;
         width: 100%;
         li {
+            width: 100%;
             transform: scaleY(${props => props.open ? "1" : "0"});
             transform-origin: top;
             transition: transform 0.5s ease;
             background-color: black;
             border-bottom: 1px solid ${theme.jeans};
-        }
-        li a {
             transform: scaleY(${props => props.open ? "1" : "0"});
             transform-origin: top;
             transition: transform 0.5s ease;
