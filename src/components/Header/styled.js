@@ -18,7 +18,6 @@ export const NavUl = styled.ul `
     height: inherit;
     background-color: transparent;
     opacity: 1;
-    }
     li {
         float: left;
         height: 100%;
@@ -38,7 +37,7 @@ export const NavUl = styled.ul `
         :active {
             background-color: ${theme.lowpacityBlue};
         }
-
+    }
     @media(max-width: 900px){
         display: inline-grid;
         list-style-type: none;
