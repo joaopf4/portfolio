@@ -1,14 +1,15 @@
 import React from 'react';
 import { ProjectsWrapper, MoreProjects} from './styled';
-import Whats4 from '../../img/thumbs/whats4.gif'
-import FutureEats from '../../img/thumbs/futureEats.gif'
-import Eddit from '../../img/thumbs/4eddit.gif'
-import CyclingQuiz from '../../img/thumbs/cyclingquiz.gif'
-import Section from '../Section'
+import Whats4 from '../../img/thumbs/whats4.gif';
+import FutureEats from '../../img/thumbs/futureEats.gif';
+import Eddit from '../../img/thumbs/4eddit.gif';
+import CyclingQuiz from '../../img/thumbs/cyclingquiz.gif';
+import StravaClone from '../../img/thumbs/strava-clone.gif';
+import Section from '../Section';
 import { theme } from '../../Theme';
-import { ProjectsStrings } from './strings'
+import { ProjectsStrings } from './strings';
 import Project from './SingleProject';
-import {Button} from '../GeneralComps/styled'
+import {Button} from '../GeneralComps/styled';
 
 class Projects extends React.Component {
 
@@ -17,38 +18,47 @@ class Projects extends React.Component {
         this.state = {
             projects: [
                 {
-                    id: 0, 
+                    id: 1, 
+                    name: 'Strava-Clone', 
+                    type: 'Front-end',
+                    img: `${StravaClone}`,
+                    description: ProjectsStrings.projectDescription[0].description, 
+                    deploy: 'https://strava-clone.vercel.app/',
+                    repository: 'https://github.com/joaopf4/strava-clone'
+                },
+                {
+                    id: 1, 
                     name: 'Cycling Quiz', 
                     type: 'Front-end',
                     img: `${CyclingQuiz}`,
-                    description: ProjectsStrings.projectDescription[0].description, 
+                    description: ProjectsStrings.projectDescription[1].description, 
                     deploy: 'https://imersao-alura-nextjs.joaopf4.vercel.app/',
                     repository: 'https://github.com/joaopf4/imersao-alura-nextjs'
                 },
                 {
-                    id: 1,
+                    id: 2,
                     name: 'Whats4',
                     type: 'Front-end',
                     img: `${Whats4}`,
-                    description: ProjectsStrings.projectDescription[1].description,
+                    description: ProjectsStrings.projectDescription[2].description,
                     deploy: 'http://bizarre-cook.surge.sh/',
                     repository: 'https://github.com/joaopf4/whatsReplica'
                 },
                 {
-                    id: 2,
+                    id: 3,
                     name: 'Future Eats',
                     type: 'Front-end',
                     img: `${FutureEats}`,
-                    description: ProjectsStrings.projectDescription[2].description,
+                    description: ProjectsStrings.projectDescription[3].description,
                     deploy: 'http://projeto-final-hamilton-future-eats.surge.sh/',
                     repository: 'https://github.com/joaopf4/futureEats'
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: '4Eddit',
                     type: 'Front-end',
                     img: `${Eddit}`,
-                    description: ProjectsStrings.projectDescription[3].description,
+                    description: ProjectsStrings.projectDescription[4].description,
                     deploy: 'http://furry-control.surge.sh/',
                     repository: 'https://github.com/joaopf4/4eddit'
                 },

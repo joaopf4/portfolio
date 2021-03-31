@@ -19,7 +19,7 @@ export const IconLinks = styled.a `
 `
 export const Button = styled.button `
     border-radius: 8px;
-    box-shadow: 2px 2px 10px #000;
+    box-shadow: 3px 3px 10px #000;
     padding: 15px;
     color: white;
     background-color: ${theme.darkBlue};
@@ -36,6 +36,7 @@ export const Button = styled.button `
     :active {
         background-color: ${theme.jeans};    
         transform: translateY(3px);
+        box-shadow: 0px 0px 4px #000;
         transition: .15s;
     }
     @media(max-width: 520px){
