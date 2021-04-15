@@ -24,7 +24,7 @@ class Projects extends React.Component {
                     type: 'Front-end',
                     img: `${Filmaria}`,
                     description: ProjectsStrings.projectDescription[0].description, 
-                    deploy: 'https://filmaria-joaopfa.netlify.app/favoritos',
+                    deploy: 'https://filmaria-joaopfa.netlify.app/',
                     repository: 'https://github.com/joaopf4/filmaria'
                 },
                 {
