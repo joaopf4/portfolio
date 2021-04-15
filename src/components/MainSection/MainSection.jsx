@@ -12,7 +12,7 @@ class MainSection extends React.Component {
             <StyledMainSection id="eujoao">
                 <FSLeft>
                     <FSLTxt>
-                        <h1>Eu sou o João Pedro!</h1>
+                        <h1>Olá, eu sou o João Pedro!</h1>
                         <h2>Desenvolvedor Web Front-End</h2>
                         <h2> ReactJS | HTML | CSS | JavaScript | TypeScript | GraphQl | NextJS | Firebase</h2>
                         <a href={Curriculo} download="Currículo João Pedro Fonseca.pdf"><Button>CV em PDF <i class="fa fa-download"></i></Button></a>

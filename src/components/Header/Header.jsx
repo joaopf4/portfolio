@@ -46,17 +46,6 @@ function Header() {
         </Link>     
         <Link
           activeClass="active"
-          to="education"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onClick={toogleHambDisplay}
-        >
-          <li>Educação</li>
-        </Link>
-        <Link
-          activeClass="active"
           to="projects"
           spy={true}
           smooth={true}
@@ -66,6 +55,17 @@ function Header() {
         >
           <li>Meus projetos</li>
         </Link>    
+        <Link
+          activeClass="active"
+          to="education"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onClick={toogleHambDisplay}
+        >
+          <li>Educação</li>
+        </Link>
         <Link
           activeClass="active"
           to="contact"

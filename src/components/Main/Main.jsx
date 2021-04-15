@@ -15,8 +15,8 @@ class Main extends React.Component {
                 <MainSection/>
                 <SobreMim/>
                 <Habilidades/>    
-                <Educação/>
                 <Projetos/>
+                <Educação/>
                 <Contato/>
                 <Footer/>
             </MainBody>
