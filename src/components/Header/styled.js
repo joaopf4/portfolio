@@ -102,9 +102,8 @@ export const HambIcon = styled.div `
         }
     }
 `
-export const CvName = styled.a `
-    font-size: 25px;
-    text-decoration: none;
+export const CvName = styled.div `
+    font-size: 1.65rem;
     margin: 0 0 0 30px;  
     font-weight: bold;
     color: ${theme.darkBlue}; 

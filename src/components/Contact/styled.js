@@ -3,7 +3,7 @@ import {theme} from "../../Theme/index";
 import {IconLinks} from "../GeneralComps/styled";
 
 
-export const SectionText = styled.p `
+export const SectionText = styled.div `
     margin: 0 auto;
     width: 85%;
     text-align: center;
