@@ -35,7 +35,7 @@ class AboutMe extends React.Component {
                         e edificantes para o meu conhecimento.
                         </p>
                         <p>                                    
-                        Em 2021 venho estudando React e suas complexidades através de cursos da udemy e imersçoes de canais como Alura e RocketSeat.
+                        Em 2021 venho estudando React e suas complexidades através de cursos da Udemy e imersões de canais como Alura e RocketSeat.
                         </p>
                         <p>                                    
                         Para além dos códigos, dedico minhas horas vagas ao ciclismo e aos meus projetos 
